@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:cntl="clr-namespace:XFMaterialSample.Controls"
+             xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
+             mc:Ignorable="d"
+             Title="Home Page"
+             x:Class="XFMaterialSample.MainPage">
+    <ScrollView>
+    <StackLayout>
+        <material:MaterialLabel Text="Field Display Name" FontSize="20"/>
+        <material:MaterialTextField x:Name="txt" FloatingPlaceholderEnabled="False" HelperText="Sample Tooltip" ErrorText="Invalid Input" Text="" InputType="Default" ShouldAnimateUnderline="True" HasError="False" LeadingIcon="battery.png"
+                           PlaceholderColor="Transparent"     
+                                    BackgroundColor="{StaticResource Material.Color.Primary}"
+                                    >            
+        </material:MaterialTextField>
+        <material:MaterialLabel Text="Radio Button" FontSize="20"/>
+            <material:MaterialButton ButtonType="Elevated" Elevation="2"
+                                 PressedBackgroundColor="Red"
+                                 HorizontalOptions="Center" Text="Open" VerticalOptions="Center"
+                                     Clicked="MaterialButton_Clicked_8"/>
+            <material:MaterialLabel Text="Checkbox Group" FontSize="20" />
+            <material:MaterialButton AllCaps="True" ButtonType="Elevated" Elevation="2"
+                                 PressedBackgroundColor="Red"
+                                 HorizontalOptions="Center" Text="Checkbox" VerticalOptions="Center"
+                                     Clicked="MaterialButton_Clicked_2"/>
+       
+            <material:MaterialLabel Text="Menu" FontSize="20"/>
+            <material:MaterialMenuButton ButtonType="Text" CornerRadius="24" Choices="{Binding Jobs}" />
+            <material:MaterialLabel Text="Slider" FontSize="20"/>
+            <material:MaterialSlider Value="45" MinValue="0" MaxValue="100" TrackColor="Red" ThumbColor="Gray"/>
+            <material:MaterialLabel Text="Switch" FontSize="20"/>
+            <material:MaterialSwitch IsActivated="True" />
+            <material:MaterialLabel Text="Chips" FontSize="20"/>
+            <material:MaterialChip BackgroundColor="#F2F2F2" Image="battery" Text="Google" TextColor="#DE000000" />
+            <material:MaterialLabel Text="Circular Loading View" FontSize="20"/>
+            <material:MaterialCircularLoadingView WidthRequest="56"
+    HeightRequest="56"
+    TintColor="#6200EE" />
+            <material:MaterialLabel Text="Material Icon" FontSize="20"/>
+            <material:MaterialIcon WidthRequest="56"
+    HeightRequest="56"
+    Source="battery"
+    TintColor="Yellow" />
+            <material:MaterialButton AllCaps="True" ButtonType="Elevated" Elevation="2"
+                                 PressedBackgroundColor="Red"
+                                 HorizontalOptions="Center" Text="Elevated Button" VerticalOptions="Center" 
+                                     Clicked="MaterialButton_Clicked_6"/>
+            <material:MaterialLabel Text="Dialog" FontSize="20"/>
+            <material:MaterialButton AllCaps="True" ButtonType="Elevated" Elevation="2"
+                                 PressedBackgroundColor="Red"
+                                 HorizontalOptions="Center" Text="Open Dialog" VerticalOptions="Center"
+                                     Clicked="MaterialButton_Clicked"/>
+            <material:MaterialButton AllCaps="True" ButtonType="Elevated" Elevation="2"
+                                 PressedBackgroundColor="Red"
+                                 HorizontalOptions="Center" Text="Open Dialog with form" VerticalOptions="Center"
+                                     Clicked="MaterialButton_Clicked_1"/>
+
+            <material:MaterialLabel Text="Confirmation Dialog" FontSize="20"/>
+            <material:MaterialButton AllCaps="True" ButtonType="Elevated" Elevation="2"
+                                 PressedBackgroundColor="Red"
+                                 HorizontalOptions="Center" Text="Confirmation Dialog" VerticalOptions="Center"
+                                     Clicked="MaterialButton_Clicked_2"/>
+
+            <material:MaterialLabel Text="Input Dialog" FontSize="20"/>
+            <material:MaterialButton AllCaps="True" ButtonType="Elevated" Elevation="2"
+                                 PressedBackgroundColor="Red"
+                                 HorizontalOptions="Center" Text="Input Dialog" VerticalOptions="Center"
+                                     Clicked="MaterialButton_Clicked_3"/>
+
+            <material:MaterialLabel Text="Loading Dialog" FontSize="20"/>
+            <material:MaterialButton AllCaps="True" ButtonType="Elevated" Elevation="2"
+                                 PressedBackgroundColor="Red"
+                                 HorizontalOptions="Center" Text="Loading Dialog" VerticalOptions="Center"
+                                     Clicked="MaterialButton_Clicked_4"/>
+
+            <material:MaterialLabel Text="Snack Dialog" FontSize="20"/>
+            <material:MaterialButton AllCaps="True" ButtonType="Elevated" Elevation="2"
+                                 PressedBackgroundColor="Red"
+                                 HorizontalOptions="Center" Text="Snack Dialog" VerticalOptions="Center"
+                                     Clicked="MaterialButton_Clicked_5"/>
+            <material:MaterialLabel Text="Picker" FontSize="20"/>
+            <material:MaterialTextField x:Name="txtPicker" FloatingPlaceholderEnabled="False" HelperText="Sample Tooltip" ErrorText="Invalid Input" InputType="Choice" ShouldAnimateUnderline="True" HasError="False" LeadingIcon="battery.png" PlaceholderColor="Transparent"  Choices="{Binding Jobs}" SelectedChoice="Web Developer" Text="Web Developer" >
+            </material:MaterialTextField>
+            <material:MaterialButton AllCaps="True" ButtonType="Elevated" Elevation="2"
+                                 PressedBackgroundColor="Red"
+                                 HorizontalOptions="Center" Text="Get Selected Value" VerticalOptions="Center"
+                                     Clicked="MaterialButton_Clicked_7"/>
+
+            
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

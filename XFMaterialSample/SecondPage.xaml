@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:material1="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
+             mc:Ignorable="d"
+             x:Class="XFMaterialSample.SecondPage">
+    <ContentPage.Content>
+        <StackLayout x:Name="stContainer">
+            <material1:MaterialLabel Text="Date Picker" FontSize="20"/>
+            <material1:MaterialDateField x:Name="dt" HasError="False" ErrorText="Invalid Date" ClearIcon="battery.png"/>
+            <material1:MaterialButton  ButtonType="Elevated" Elevation="2"
+                                 PressedBackgroundColor="Red"
+                                 HorizontalOptions="Center" Text="Get Date" VerticalOptions="Center"
+                                     Clicked="MaterialButton_Clicked_9"/>
+
+            <material1:MaterialLabel Text="Date Picker" FontSize="20"/>
+            <material1:MaterialCard CornerRadius="2" Elevation="3" HeightRequest="80" HorizontalOptions="FillAndExpand" IsClickable="True" IsClippedToBounds="True"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
